@@ -45,7 +45,7 @@ df_dbh_grouped = pd.DataFrame(trees_df.groupby(['dbh']).count()['tree_id'])
 
 df_dbh_grouped.columns = ['tree_count'] 
 
-col1, col2 = st.beta_columns(2) 
+col1, col2 = st.columns(2) 
 
 with col1: 
 
